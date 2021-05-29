@@ -21,8 +21,11 @@ public class ArchivoDirecto implements Closeable
         throws IOException
     {
         long tamanioArchivo = raf.length();
+
+        // Colocar después del último registro en el archivo
         long posicion = (long)Math.ceil(1.0 * tamanioArchivo / tamanioRegistro) * tamanioRegistro;
 
+        // Si la posición está dentro del área reservada
         if (posicion < areaReservada) {
             return areaReservada;
         }
