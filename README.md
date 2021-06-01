@@ -71,7 +71,7 @@ MIENTRAS ocupado = 1 ENTONCES
 
 FIN_MIENTRAS
 
-
+archivo.setPosicion(posicion)
 
 // ESCRIBIR CONTENIDO DEL REGISTRO
 // Indicar que registro esta ocupado
